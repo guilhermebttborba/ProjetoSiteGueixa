@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gueixas & Maikos</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- navbar -->
-    <header>
+    <header id="navbar">
       <img src="img/geisha-logo.png" alt="logo gueixas" />
       <h2>Gueixas & Maikos</h2>
       <nav>
@@ -22,11 +25,11 @@
     <!-- fimnavbar -->
     <!-- banner início-->
     <main>
-      <div id="banner-info">
+      <div id="main-banner">
         <div id="banner-info">
           <h1>Olá, você está entrando no mundo dos Okiyas de Kyoto</h1>
           <img src="img/geisha-icone.png" alt="icone de uma maiko" />
-          <p>おかえりなさい！</p>
+          <p>ようこそ！</p>
         </div>
       </div>
       <!-- about inicio-->
@@ -56,7 +59,7 @@
           </p>
         </div>
 
-        <div class="skills-container">
+        <div class="skills-container central">
           <img src="img/shamizen.png" alt="decoração" />
           <h3 class="subtitle">Que instrumento uma gueixa toca?</h3>
           <p>
@@ -95,5 +98,17 @@
             <div class="job-box1"></div>
         </div>
     </section>
+    <footer>
+      <h2>Contrate uma Gueixa/Maiko</h2>
+      <p>Caso queira falar sobre algum evento ou book entre em contato comigo :D</p>
+      <img src="img/geisha-icone.png" alt="Perfil Ninja">
+      <form action="" method="">
+        <input type="text" name="name" placeholder="Seu nome">
+        <input type="email" name="email" placeholder="Seu e-mail">
+        <textarea name="msg" placecholder="Digite uma mensagem"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+      <p>Desenvolvido por <span class="detail">Guilherme B. Borba</span></p>
+    </footer>
   </body>
 </html>
