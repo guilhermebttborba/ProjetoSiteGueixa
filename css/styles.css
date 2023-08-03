@@ -116,7 +116,7 @@ h2 {
 }
 
 #about-section p {
-  max-widht: 650px;
+  max-width: 650px;
   margin-right: auto;
   margin-left: auto;
   line-height: 30px;
@@ -258,4 +258,106 @@ footer textarea {
 
 footer .detail {
   font-weight: bold;
+}
+
+/* responsivo celulares -media query */
+@media (max-widht: 450px) {
+  /* geral */
+  p,
+  input,
+  textarea {
+    font-size: 1.2rem;
+  }
+
+  /* navbar */
+  #navbar h2 {
+    display: none;
+  }
+
+  #navbar img {
+    top: 9px;
+  }
+
+  #navbar ul {
+    margin-top: 1.1rem; /* Root element*/
+  }
+  /* banner */
+
+  #main-banner {
+    height: 40vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+  }
+
+  #banner-info {
+    width: 60%;
+  }
+
+  #banner-info p {
+    margin: 0;
+    width: auto;
+  }
+
+  /* about */
+  #about-section {
+    padding: 2rem;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  /* skills */
+  #skills-section {
+    margin-top: -35px;
+    width: 90px;
+  }
+
+  #skils-section .container {
+    flex-direction: column;
+  }
+
+  .skills-container h3,
+  .skills-container .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .skills-container {
+    padding: 25px;
+  }
+
+  .skills.container.central {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* jobs */
+
+  #jobs-section h2,
+  #jobs-section p {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .job-container {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .job-box {
+    margin-bottom: 2rem;
+    flex: 1 1 300px;
+  }
+
+  /* footer */
+  footer {
+    padding: 50px 15px;
+  }
+
+  footer form {
+    width: 100px;
+  }
+
+  .detail {
+    margin-top: 10px;
+    display: block;
+  }
 }
